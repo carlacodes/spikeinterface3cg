@@ -1,0 +1,12 @@
+{
+    "class": "spikeinterface.core.npzsortingextractor.NpzSortingExtractor",
+    "module": "spikeinterface",
+    "kwargs": {
+        "file_path": "C:\\Users\\carla\\KS_temp\\firings.npz"
+    },
+    "dumpable": true,
+    "version": "0.95.0.dev0",
+    "relative_paths": false,
+    "annotations": {},
+    "properties": {}
+}
