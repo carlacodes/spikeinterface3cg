@@ -5,6 +5,7 @@ import os
 import spikeinterface as si
 import spikeinterface.extractors as se
 import spikeinterface.sorters as ss
+
 import spikeinterface.toolkit as st
 from spikeinterface.exporters import export_to_phy
 

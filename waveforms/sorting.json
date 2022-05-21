@@ -1,8 +1,9 @@
 {
-    "class": "spikeinterface.core.npzsortingextractor.NpzSortingExtractor",
+    "class": "spikeinterface.extractors.phykilosortextractors.KiloSortSortingExtractor",
     "module": "spikeinterface",
     "kwargs": {
-        "file_path": "C:\\Users\\carla\\KS_temp\\firings.npz"
+        "folder_path": "E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output5",
+        "keep_good_only": false
     },
     "dumpable": true,
     "version": "0.95.0.dev0",
