@@ -11,11 +11,11 @@ from spikeinterface.exporters import export_to_phy
 from spikeinterface import NumpyRecording, NumpySorting
 from spikeinterface import append_recordings, concatenate_recordings
 
-
-
 from probeinterface import generate_multi_columns_probe
 
 result = si.sorters.installed_sorters()
+
+
 @dataclass
 class TDTData:
     dp: str
@@ -56,8 +56,6 @@ class TDTData:
         # this computes and saves the recording after applying the preprocessing chain
         # recording_preprocessed = recording_cmr.save(format='binary')
 
-
-
     def run_mountainsort(self, output_folder):
         self.sorting_MS = ss.run_mountainsort4(recording=self.recording_preprocessed,
                                                output_folder=output_folder)
@@ -66,7 +64,7 @@ class TDTData:
 
     def run_ks2(self, output_folder):
         self.sorting_KS = ss.run_kilosort2(recording=self.recording_preprocessed,
-                                               output_folder=output_folder)
+                                           output_folder=output_folder)
 
         print(self.sorting_KS)
 
@@ -83,6 +81,7 @@ class TDTData:
 
         export_to_phy(self.we, 'E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output2',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
+
     def save_ks_as_phy(self):
         self.we = si.WaveformExtractor.create(self.recording_preprocessed, self.sorting_KS, 'waveforms',
                                               remove_if_exists=True)
@@ -124,9 +123,10 @@ def preprocess_data_cg(data):
     # self.recording_preprocessed = recording_cmr
     return recording_cmr
 
+
 def run_ks2_cg(data, output_folder):
     data.sorting_KS = ss.run_kilosort2(recording=data,
-                                               output_folder=output_folder)
+                                       output_folder=output_folder)
 
     print(data.sorting_KS)
 
@@ -145,34 +145,40 @@ def save_ks_as_phy_alone(data_test):
 
 def main():
     datadir = Path('E:\\Electrophysiological_Data\\F1702_Zola_Nellie')
-    dp = datadir /'BlockNellie-162'
+    dp = datadir / 'BlockNellie-162'
     store = ['BB_2', 'BB_3']
-    recording_list=[]
+    recording_list = []
     # sorting_path = '\\home\\jules\\code\\WARPAutomatedSpikesorting\\output_spikesorting\\firings.npz'
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you actually use normally for kilosort, thus install parallel computing toolbox on that latest version of matlab
     output_folder = Path('E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output7')
-    for i in range(160,162):
-        block_ind='BlockNellie-'+str(i)
-        dp2= datadir /block_ind
-        data = TDTData(dp2, store)
-        new_data=preprocess_data_cg(data)
+    for i in range(115, 180):
+        block_ind = 'BlockNellie-' + str(i)
 
+        dp2 = datadir / block_ind
+        if i == 131 or i==138 or i==146 or i==148 or i==150:
+            continue
+
+        if os.path.isdir(dp2):
+            print(i)
+            data = TDTData(dp2, store)
+            new_data = preprocess_data_cg(data)
+        else:
+            continue
 
         recording_list.append(new_data)
-
 
     rec = concatenate_recordings(recording_list)
     print(rec)
     s = rec.get_num_samples(segment_index=0)
     print(f'segment {0} num_samples {s}')
 
-
+    print('running kilosort sorter now')
     Kilosort2Sorter.set_kilosort2_path('D:\Scripts\Kilosort-2.0')
-    #E:\Electrophysiological_Data\F1702_Zola_Nellie\warpspikeinterface_output3
-    data_test=run_ks2_cg(rec, output_folder=output_folder)
-    #data.run_kilosort2(output_folder=output_folder)
+    # E:\Electrophysiological_Data\F1702_Zola_Nellie\warpspikeinterface_output3
+    data_test = run_ks2_cg(rec, output_folder=output_folder)
+    # data.run_kilosort2(output_folder=output_folder)
     # data.load_sorting(sorting_path)
-    save_ks_as_phy_alone(data_test)
+    # save_ks_as_phy_alone(data_test)
 
 
 if __name__ == '__main__':
