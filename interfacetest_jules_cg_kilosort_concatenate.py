@@ -155,7 +155,7 @@ def main():
         block_ind = 'BlockNellie-' + str(i)
 
         dp2 = datadir / block_ind
-        if i == 131 or i==138 or i==146 or i==148 or i==150:
+        if i == 131 or i==138 or i==146 or i==148 or i==150 or i==152 or i==169:
             continue
 
         if os.path.isdir(dp2):
@@ -166,6 +166,7 @@ def main():
             continue
 
         recording_list.append(new_data)
+        #need to add condiitonal to check if streams are same length BB2 isequal BB3?
 
     rec = concatenate_recordings(recording_list)
     print(rec)
