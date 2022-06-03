@@ -79,7 +79,7 @@ class TDTData:
         self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
         print(self.we)
 
-        export_to_phy(self.we, 'E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output2',
+        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
     def save_ks_as_phy(self):
@@ -90,7 +90,7 @@ class TDTData:
         self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
         print(self.we)
 
-        export_to_phy(self.we, 'E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output8',
+        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 
@@ -139,12 +139,12 @@ def save_ks_as_phy_alone(data_test):
     # self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
     # print(self.we)
 
-    export_to_phy(data_test, 'E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output8',
+    export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8',
                   compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 
 def main():
-    datadir = Path('E:\\Electrophysiological_Data\\F1702_Zola_Nellie')
+    datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie/')
     dp = datadir / 'BlockNellie-162'
     store = ['BB_2', 'BB_3']
     recording_list = []
@@ -152,9 +152,9 @@ def main():
 
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
     # thus install parallel computing toolbox on that latest version of matlab
-    output_folder = Path('E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output8')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8')
     #if there are too many blocks concatenated you WILL run into a memory error depending on your GPU
-    for i in range(115, 130):
+    for i in range(115, 180):
         block_ind = 'BlockNellie-' + str(i)
 
         dp2 = datadir / block_ind
@@ -177,8 +177,8 @@ def main():
     print(f'segment {0} num_samples {s}')
 
     print('running kilosort sorter now')
-    Kilosort2Sorter.set_kilosort2_path('D:\Scripts\Kilosort-2.0')
-    # E:\Electrophysiological_Data\F1702_Zola_Nellie\warpspikeinterface_output3
+    Kilosort2Sorter.set_kilosort2_path('/home/zceccgr/Scratch/zceccgr/Kilosort-2.0')
+
     data_test = run_ks2_cg(rec, output_folder=output_folder)
     # data.run_kilosort2(output_folder=output_folder)
     # data.load_sorting(sorting_path)
