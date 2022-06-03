@@ -151,7 +151,7 @@ def main():
     # sorting_path = '\\home\\jules\\code\\WARPAutomatedSpikesorting\\output_spikesorting\\firings.npz'
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you actually use normally for kilosort, thus install parallel computing toolbox on that latest version of matlab
     output_folder = Path('E:\\Electrophysiological_Data\\F1702_Zola_Nellie\\warpspikeinterface_output8')
-    for i in range(115, 160):
+    for i in range(115, 130):
         block_ind = 'BlockNellie-' + str(i)
 
         dp2 = datadir / block_ind
