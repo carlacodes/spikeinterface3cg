@@ -144,7 +144,8 @@ def save_ks_as_phy_alone(data_test):
 
 
 def main():
-    datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie/')
+    #/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie
+    datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie')
     dp = datadir / 'BlockNellie-162'
     store = ['BB_2', 'BB_3']
     recording_list = []
@@ -152,13 +153,14 @@ def main():
 
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
     # thus install parallel computing toolbox on that latest version of matlab
-    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/warpspikeinterface_output8')
     #if there are too many blocks concatenated you WILL run into a memory error depending on your GPU
     for i in range(115, 180):
+        print(i)
         block_ind = 'BlockNellie-' + str(i)
 
         dp2 = datadir / block_ind
-        if i == 131 or i==138 or i==146 or i==148 or i==150 or i==152 or i==169 or i==124 or i==140 or i==164:
+        if i == 131 or i==138 or i==146 or i==148 or i==150 or i==152 or i==169 or i==124 or i==125 or i==140 or i==164:
             continue
 
         if os.path.isdir(dp2):
@@ -177,7 +179,8 @@ def main():
     print(f'segment {0} num_samples {s}')
 
     print('running kilosort sorter now')
-    Kilosort2Sorter.set_kilosort2_path('/home/zceccgr/Scratch/zceccgr/Kilosort-2.0')
+    
+    Kilosort2Sorter.set_kilosort2_path('$TMPDIR/Kilosort2')
 
     data_test = run_ks2_cg(rec, output_folder=output_folder)
     # data.run_kilosort2(output_folder=output_folder)
