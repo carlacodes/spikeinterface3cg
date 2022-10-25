@@ -188,7 +188,7 @@ def save_as_phy_alone(data_test, rec):
 
     export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput17',
                     compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
-    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput17')
+    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput18')
 
 
 def main():

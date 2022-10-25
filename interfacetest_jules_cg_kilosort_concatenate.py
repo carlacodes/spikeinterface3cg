@@ -90,7 +90,7 @@ class TDTData:
         self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
         print(self.we)
 
-        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8',
+        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput11',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 
@@ -139,7 +139,7 @@ def save_ks_as_phy_alone(data_test):
     # self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
     # print(self.we)
 
-    export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output8',
+    export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput11',
                   compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 
@@ -153,7 +153,7 @@ def main():
 
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
     # thus install parallel computing toolbox on that latest version of matlab
-    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/warpspikeinterface_output8')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/wpsoutput11')
     #if there are too many blocks concatenated you WILL run into a memory error depending on your GPU
     for i in range(115, 180):
         print(i)
@@ -180,7 +180,7 @@ def main():
 
     print('running kilosort sorter now')
     
-    Kilosort2Sorter.set_kilosort2_path('$TMPDIR/Kilosort2')
+    Kilosort2Sorter.set_kilosort2_path('/home/zceccgr/Scratch/zceccgr/Kilosort-2.0')
 
     data_test = run_ks2_cg(rec, output_folder=output_folder)
     # data.run_kilosort2(output_folder=output_folder)

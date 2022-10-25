@@ -1,0 +1,87 @@
+Currently Loaded Modulefiles:
+  1) gcc-libs/4.9.2                   13) giflib/5.1.1
+  2) cmake/3.21.1                     14) emacs/28.1
+  3) flex/2.5.39                      15) tmux/3.2a
+  4) git/2.32.0                       16) mrxvt/0.5.4
+  5) apr/1.7.0                        17) userscripts/1.4.0
+  6) apr-util/1.6.1                   18) rcps-core/1.0.0
+  7) subversion/1.14.1                19) default-modules/2018
+  8) screen/4.8.0-ucl1                20) compilers/gnu/4.9.2
+  9) gerun                            21) cuda/10.1.243/gnu-4.9.2
+ 10) nano/2.4.2                       22) python/3.8.6
+ 11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
+ 12) dos2unix/7.3                     24) python3/3.8
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/waveclus/waveclus.py:124: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2022-08-07 19:29:54 INFO     Starting
+2022-08-07 19:29:54 INFO     at main function
+2022-08-07 19:29:54 INFO     variable: BlockNellie-115
+2022-08-07 19:29:59 INFO     variable: BlockNellie-116
+2022-08-07 19:30:06 INFO     variable: BlockNellie-117
+2022-08-07 19:30:14 INFO     variable: BlockNellie-118
+2022-08-07 19:30:21 INFO     variable: BlockNellie-119
+2022-08-07 19:30:29 INFO     variable: BlockNellie-120
+2022-08-07 19:30:40 INFO     variable: BlockNellie-121
+2022-08-07 19:30:48 INFO     variable: BlockNellie-122
+2022-08-07 19:30:56 INFO     variable: BlockNellie-123
+2022-08-07 19:31:03 INFO     variable: BlockNellie-124
+2022-08-07 19:31:03 INFO     variable: BlockNellie-125
+2022-08-07 19:31:03 INFO     variable: BlockNellie-126
+2022-08-07 19:31:10 INFO     variable: BlockNellie-127
+2022-08-07 19:31:22 INFO     variable: BlockNellie-128
+2022-08-07 19:31:28 INFO     variable: BlockNellie-129
+2022-08-07 19:31:39 INFO     variable: ConcatenateSegmentRecording: 32 channels - 1 segments - 24.4kHz - 17237.583s
+2022-08-07 19:31:39 INFO     running mountainsort4
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-115/F1702_Zola_BlockNellie-115.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-116/F1702_Zola_BlockNellie-116.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-117/F1702_Zola_BlockNellie-117.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-118/F1702_Zola_BlockNellie-118.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-119/F1702_Zola_BlockNellie-119.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-120/F1702_Zola_BlockNellie-120.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-121/F1702_Zola_BlockNellie-121.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-122/F1702_Zola_BlockNellie-122.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-123/F1702_Zola_BlockNellie-123.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-126/F1702_Zola_BlockNellie-126.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-127/F1702_Zola_BlockNellie-127.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-128/F1702_Zola_BlockNellie-128.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/BlockNellie-129/F1702_Zola_BlockNellie-129.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2022-08-07 20:22:25 INFO     Starting
+2022-08-08 01:02:37 INFO     Starting
+Traceback (most recent call last):
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4.py", line 243, in <module>
+    main()
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4.py", line 238, in main
+    save_as_phy_alone(data_test, rec)
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4.py", line 186, in save_as_phy_alone
+    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput12',
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/exporters/to_phy.py", line 103, in export_to_phy
+    raise FileExistsError(f'{output_folder} already exists')
+FileExistsError: /home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/wpsoutput12 already exists
+tar: Removing leading `/' from member names

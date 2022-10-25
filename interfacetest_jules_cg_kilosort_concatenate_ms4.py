@@ -8,7 +8,8 @@ logger = logging.getLogger('augusttest')
 logger.setLevel(logging.DEBUG)
 
 import datetime
-
+import os
+os.environ['NUMEXPR_MAX_THREADS'] = '36'
 
 from dataclasses import dataclass
 from pathlib import Path
@@ -31,14 +32,8 @@ now = datetime.datetime.now().strftime('%d-%m-%Y_%H:%M:%S')
 fh = logging.FileHandler(logpath / f'multirec_sorting_logs_{now}.log')
 fh.setLevel(logging.DEBUG)
 logger.addHandler(fh)
-
-
 logger.info('Starting')
 
-
-variable = 10
-
-logger.info(f'variable: {variable}')
 
 
 @dataclass
@@ -104,7 +99,7 @@ class TDTData:
         self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
         print(self.we)
 
-        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//warpspikeinterface_output',
+        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput13',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
     def save_ks_as_phy(self):
@@ -115,7 +110,7 @@ class TDTData:
         self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
         print(self.we)
 
-        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput11',
+        export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput13',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 
@@ -165,6 +160,7 @@ def run_mountainsort4_cg(data, output_folder):
                                        output_folder=output_folder)
 
     print(data.sorting_mountainsort4 )
+    return data
 
 
 def save_ks_as_phy_alone(data_test):
@@ -175,9 +171,20 @@ def save_ks_as_phy_alone(data_test):
     # self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
     # print(self.we)
 
-    export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput11',
+    export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput13',
                   compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
+            
+def save_as_phy_alone(data_test, rec):
+    data_test.we = si.WaveformExtractor.create(rec, data_test.sorting_mountainsort4, 'waveforms',
+                                            remove_if_exists=True)
+
+    data_test.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
+    data_test.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
+    print(data_test.we)
+
+    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1702_Zola_Nellie//wpsoutput17',
+                    compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
 def main():
     #/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie
@@ -190,10 +197,10 @@ def main():
 
     ##this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
     # thus install parallel computing toolbox on that latest version of matlab
-    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/wpsoutput11')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1702_Zola_Nellie/wpsoutput16')
     #if there are too many blocks concatenated you WILL run into a memory error depending on your GPU
     print('hello, concatenating neural data blocks now')
-    for i in range(115, 180):
+    for i in range(115, 130): #180
         print(i)
         block_ind = 'BlockNellie-' + str(i)
         print(block_ind)
@@ -228,8 +235,9 @@ def main():
     data_test = run_mountainsort4_cg(rec, output_folder=output_folder)
     # data.run_kilosort2(output_folder=output_folder)
     # data.load_sorting(sorting_path)
-    save_ks_as_phy_alone(data_test)
+    save_as_phy_alone(data_test, rec)
 
 
 if __name__ == '__main__':
+    print('running main test')
     main()
