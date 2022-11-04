@@ -75,8 +75,7 @@ class TDTData:
         return recording_cmr
 
         # this computes and saves the recording after applying the preprocessing chain
-        # recording_preprocessed = recording_cmr.save(format='binary')
-
+     
     def run_mountainsort(self, output_folder):
         self.sorting_MS = ss.run_mountainsort4(recording=self.recording_preprocessed,
                                                output_folder=output_folder)
@@ -163,13 +162,6 @@ def run_mountainsort4_cg(data, output_folder):
 
 
 def save_ks_as_phy_alone(data_test):
-    # data_test.we = si.WaveformExtractor.create(self.recording_preprocessed, self.sorting_KS, 'waveforms',
-    #                                       remove_if_exists=True)
-    #
-    # self.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-    # self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
-    # print(self.we)
-
     export_to_phy(data_test, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1902_Eclair//wpsoutput13',
                   compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
 
@@ -188,7 +180,6 @@ def save_as_phy_alone(data_test, rec):
 
 
 def main():
-    #/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1902_Eclair
     datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1902_Eclair')
     logger.info('at main function')
     dp = datadir / 'BlockNellie-162'
@@ -219,8 +210,6 @@ def main():
         #need to add condiitonal to check if streams are same length BB2 isequal BB3?
 
     rec = concatenate_recordings(recording_list)
-    #only looking at the fourth row
-
     print(rec)
     logger.info(f'variable: {rec}')
 
@@ -230,7 +219,6 @@ def main():
 
     print('running mountainsort sorter now')
     
-
     data_test = run_mountainsort4_cg(rec, output_folder=output_folder)
 
     save_as_phy_alone(data_test, rec)
