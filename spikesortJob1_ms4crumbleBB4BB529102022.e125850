@@ -1,0 +1,96 @@
+Currently Loaded Modulefiles:
+  1) gcc-libs/4.9.2                   13) giflib/5.1.1
+  2) cmake/3.21.1                     14) emacs/28.1
+  3) flex/2.5.39                      15) tmux/3.2a
+  4) git/2.32.0                       16) mrxvt/0.5.4
+  5) apr/1.7.0                        17) userscripts/1.4.0
+  6) apr-util/1.6.1                   18) rcps-core/1.0.0
+  7) subversion/1.14.1                19) default-modules/2018
+  8) screen/4.8.0-ucl1                20) compilers/gnu/4.9.2
+  9) gerun                            21) cuda/10.1.243/gnu-4.9.2
+ 10) nano/2.4.2                       22) python/3.8.6
+ 11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
+ 12) dos2unix/7.3                     24) python3/3.8
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/waveclus/waveclus.py:124: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2022-10-30 00:08:03 INFO     Starting
+2022-10-30 00:08:03 INFO     at main function
+2022-10-30 00:08:03 INFO     variable: BlockNellie-1
+2022-10-30 00:08:13 INFO     variable: BlockNellie-2
+2022-10-30 00:08:19 INFO     variable: BlockNellie-3
+2022-10-30 00:08:23 INFO     variable: BlockNellie-4
+2022-10-30 00:08:26 INFO     variable: BlockNellie-5
+2022-10-30 00:08:30 INFO     variable: BlockNellie-6
+2022-10-30 00:08:30 INFO     variable: BlockNellie-7
+2022-10-30 00:08:30 INFO     variable: BlockNellie-8
+2022-10-30 00:08:30 INFO     variable: BlockNellie-9
+2022-10-30 00:08:39 INFO     variable: BlockNellie-10
+2022-10-30 00:08:51 INFO     variable: BlockNellie-11
+2022-10-30 00:09:00 INFO     variable: BlockNellie-12
+2022-10-30 00:09:10 INFO     variable: BlockNellie-13
+2022-10-30 00:09:21 INFO     variable: BlockNellie-14
+2022-10-30 00:09:28 INFO     variable: BlockNellie-15
+2022-10-30 00:09:34 INFO     variable: BlockNellie-16
+2022-10-30 00:09:36 INFO     variable: BlockNellie-17
+2022-10-30 00:09:39 INFO     variable: ConcatenateSegmentRecording: 32 channels - 1 segments - 24.4kHz - 8264.038s
+2022-10-30 00:09:39 INFO     running mountainsort4
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-1/F1901_Crumble_BlockNellie-1.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-2/F1901_Crumble_BlockNellie-2.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-3/F1901_Crumble_BlockNellie-3.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-4/F1901_Crumble_BlockNellie-4.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-5/F1901_Crumble_BlockNellie-5.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-9/F1901_Crumble_BlockNellie-9.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-10/F1901_Crumble_BlockNellie-10.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-11/F1901_Crumble_BlockNellie-11.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-12/F1901_Crumble_BlockNellie-12.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-13/F1901_Crumble_BlockNellie-13.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-14/F1901_Crumble_BlockNellie-14.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-15/F1901_Crumble_BlockNellie-15.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-16/F1901_Crumble_BlockNellie-16.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/tdt/TDTbin2py.py:910: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/BlockNellie-17/F1901_Crumble_BlockNellie-17.tnt' mode='r' encoding='UTF-8'>
+  lines = np.array([line.rstrip('\n') for line in open(tnt_path)])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Traceback (most recent call last):
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_crumble.py", line 243, in <module>
+    main()
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_crumble.py", line 236, in main
+    data_test = run_mountainsort4_cg(rec, output_folder=output_folder)
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_crumble.py", line 160, in run_mountainsort4_cg
+    data.sorting_mountainsort4 = ss.run_mountainsort4(recording=data,
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/runsorter.py", line 629, in run_mountainsort4
+    return run_sorter('mountainsort4', *args, **kwargs)
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/runsorter.py", line 137, in run_sorter
+    return run_sorter_local(**common_kwargs)
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/runsorter.py", line 157, in run_sorter_local
+    SorterClass.run_from_folder(output_folder, raise_error, verbose)
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/basesorter.py", line 261, in run_from_folder
+    raise SpikeSortingError(
+spikeinterface.sorters.utils.misc.SpikeSortingError: Spike sorting failed. You can inspect the runtime trace in /home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/wpsoutputBB4BB5/spikeinterface_log.json
+tar: Removing leading `/' from member names
