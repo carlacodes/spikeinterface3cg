@@ -140,8 +140,6 @@ def preprocess_data_cg(data):
     print(recording_f)
     recording_cmr = st.common_reference(recording_f, reference='global', operator='median')
     print(recording_cmr)
-
-    # self.recording_preprocessed = recording_cmr
     return recording_cmr
 
 
