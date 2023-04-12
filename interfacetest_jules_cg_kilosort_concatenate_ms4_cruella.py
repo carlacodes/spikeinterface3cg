@@ -17,6 +17,7 @@ import os
 import spikeinterface as si
 import spikeinterface.extractors as se
 import spikeinterface.sorters as ss
+import spikeinterface.preprocessing as sipre
 from random import choice
 import spikeinterface.toolkit as st
 from spikeinterface.sorters import Kilosort2Sorter
@@ -64,6 +65,8 @@ class TDTData:
 
         probe.set_device_channel_indices(channel_indices - 1)
         recording = recording.set_probe(probe)
+        #add saturation removal
+        recording = sipre.blank_saturation(recording, quantile_threshold = 0.8)
 
         recording_f = st.bandpass_filter(recording, freq_min=300, freq_max=6000)
         print(recording_f)
@@ -182,9 +185,9 @@ def save_as_phy_alone(data_test, rec):
     data_test.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
     data_test.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
     print(data_test.we)
-    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput15032023bb4bb5//phy/',
+    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput12042023bb4bb5//phy/',
                         compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
-    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput15032023bb4bb5//report')
+    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput12042023bb4bb5//report')
 
 
 
@@ -197,7 +200,7 @@ def main():
     recording_list = []
 
     ##If using kilosort, this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
-    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/wpsoutput15032023bb4bb5')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/wpsoutput12042023bb4bb5')
     print('hello, concatenating neural data blocks now')
     
     for i in [x for x in range(1, 136) ]: #range of intra trial roving stimuli for crumble, if x is not range(35,45)
