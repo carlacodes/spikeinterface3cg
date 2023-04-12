@@ -66,7 +66,7 @@ class TDTData:
         probe.set_device_channel_indices(channel_indices - 1)
         recording = recording.set_probe(probe)
         #add saturation removal
-        recording = sipre.blank_saturation(recording, quantile_threshold = 0.8)
+        recording = sipre.blank_saturation(recording, abs_threshold = 6000)
 
         recording_f = st.bandpass_filter(recording, freq_min=300, freq_max=6000)
         print(recording_f)
@@ -99,7 +99,7 @@ class TDTData:
                                               remove_if_exists=True)
 
         self.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-        self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
+        self.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
         print(self.we)
 
         export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput13',
@@ -110,7 +110,7 @@ class TDTData:
                                               remove_if_exists=True)
 
         self.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-        self.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
+        self.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
         print(self.we)
 
         export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput13',
@@ -183,7 +183,7 @@ def save_as_phy_alone(data_test, rec):
                                             remove_if_exists=True)
 
     data_test.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-    data_test.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
+    data_test.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
     print(data_test.we)
     export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput12042023bb4bb5//phy/',
                         compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
