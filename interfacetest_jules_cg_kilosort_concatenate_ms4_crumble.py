@@ -183,9 +183,9 @@ def save_as_phy_alone(data_test, rec):
     data_test.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
     data_test.we.run_extract_waveforms(n_jobs=3, chunk_size=30000)
     print(data_test.we)
-    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1901_Crumble//wpsoutput29102022bb4bb5',
+    export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1901_Crumble//wpsoutput17112022bb2bb3//phy/',
                         compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
-    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1901_Crumble//wpsoutput29102022bb4bb5_2')
+    export_report(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1901_Crumble//wpsoutput17112022bb2bb3//report')
 
 
 
@@ -194,20 +194,20 @@ def main():
     datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble')
     logger.info('at main function')
     dp = datadir / 'BlockNellie-162'
-    store = ['BB_4', 'BB_5']
+    store = ['BB_2', 'BB_3']
     recording_list = []
 
     ##If using kilosort, this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
-    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/wpsoutputBB4BB5')
+    output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1901_Crumble/wpsoutput17112022bb2bb3')
     print('hello, concatenating neural data blocks now')
-    for i in range(1, 18): #range of intra trial roving stimuli for crumble
+    for i in range(1, 27): #range of intra trial roving stimuli for crumble
         print(i)
         block_ind = 'BlockNellie-' + str(i)
         print(block_ind)
         logger.info(f'variable: {block_ind}')
 
         dp2 = datadir / block_ind
-        if i == 6 or i==7 or i==2 or i==17:
+        if i == 6 or i==7 or i==2 or i==4 or i ==8 or i==17:
             continue
 
         if os.path.isdir(dp2):
