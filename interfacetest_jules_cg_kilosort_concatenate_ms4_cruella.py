@@ -69,7 +69,7 @@ class TDTData:
         recording_cmr = st.common_reference(recording, reference='global', operator='median')
         print(recording_cmr)
 
-        recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.9, direction = 'both', ms_before = 500, after_ms =500)
+        recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.1, direction = 'both', ms_before = 500, after_ms =500)
         recording_f = st.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
         print(recording_f)
 
