@@ -17,7 +17,7 @@ import os
 import spikeinterface as si
 import spikeinterface.extractors as se
 import spikeinterface.sorters as ss
-import spikeinterface.preprocessing as sipre
+import spikeinterface.toolkit.preprocessing as sipre
 from random import choice
 import spikeinterface.toolkit as st
 from spikeinterface.sorters import Kilosort2Sorter
@@ -66,14 +66,15 @@ class TDTData:
         probe.set_device_channel_indices(channel_indices - 1)
         recording = recording.set_probe(probe)
         #add saturation removal
-        recording = sipre.blank_saturation(recording, abs_threshold = 6000)
-
-        recording_f = st.bandpass_filter(recording, freq_min=300, freq_max=6000)
-        print(recording_f)
-        recording_cmr = st.common_reference(recording_f, reference='global', operator='median')
+        recording_cmr = st.common_reference(recording, reference='global', operator='median')
         print(recording_cmr)
 
-        self.recording_preprocessed = recording_cmr
+        recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.9, direction = 'both', ms_before = 500, after_ms =500)
+        recording_f = st.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
+        print(recording_f)
+
+
+        self.recording_preprocessed = recording_f
         return recording_cmr
 
         # this computes and saves the recording after applying the preprocessing chain
