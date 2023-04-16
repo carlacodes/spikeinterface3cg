@@ -1,0 +1,54 @@
+Currently Loaded Modulefiles:
+  1) gcc-libs/4.9.2                   13) giflib/5.1.1
+  2) cmake/3.21.1                     14) emacs/28.1
+  3) flex/2.5.39                      15) tmux/3.3a
+  4) git/2.32.0                       16) mrxvt/0.5.4
+  5) apr/1.7.0                        17) userscripts/1.4.0
+  6) apr-util/1.6.1                   18) rcps-core/1.0.0
+  7) subversion/1.14.1                19) default-modules/2018
+  8) screen/4.9.0                     20) compilers/gnu/4.9.2
+  9) gerun                            21) cuda/10.1.243/gnu-4.9.2
+ 10) nano/2.4.2                       22) python/3.8.6
+ 11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
+ 12) dos2unix/7.3                     24) python3/3.8
+Traceback (most recent call last):
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/spikesorting_install_test.py", line 6, in <module>
+    import spikeinterface.sorters as ss
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/__init__.py", line 2, in <module>
+    from .sorterlist import *
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/sorterlist.py", line 14, in <module>
+    from .mountainsort4 import Mountainsort4Sorter
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/mountainsort4/__init__.py", line 1, in <module>
+    from .mountainsort4 import Mountainsort4Sorter
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/mountainsort4/mountainsort4.py", line 4, in <module>
+    from spikeinterface.toolkit import bandpass_filter, whiten
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/__init__.py", line 1, in <module>
+    from . import preprocessing
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/__init__.py", line 1, in <module>
+    from .preprocessinglist import *
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/preprocessinglist.py", line 13, in <module>
+    from .clip import (
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/clip.py", line 6, in <module>
+    from ..core import get_random_data_chunks
+ModuleNotFoundError: No module named 'spikeinterface.toolkit.core'
+Traceback (most recent call last):
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_cruella.py", line 19, in <module>
+    import spikeinterface.sorters as ss
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/__init__.py", line 2, in <module>
+    from .sorterlist import *
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/sorterlist.py", line 14, in <module>
+    from .mountainsort4 import Mountainsort4Sorter
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/mountainsort4/__init__.py", line 1, in <module>
+    from .mountainsort4 import Mountainsort4Sorter
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/sorters/mountainsort4/mountainsort4.py", line 4, in <module>
+    from spikeinterface.toolkit import bandpass_filter, whiten
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/__init__.py", line 1, in <module>
+    from . import preprocessing
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/__init__.py", line 1, in <module>
+    from .preprocessinglist import *
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/preprocessinglist.py", line 13, in <module>
+    from .clip import (
+  File "/lustre/home/zceccgr/spkenv2/lib/python3.8/site-packages/spikeinterface/toolkit/preprocessing/clip.py", line 6, in <module>
+    from ..core import get_random_data_chunks
+ModuleNotFoundError: No module named 'spikeinterface.toolkit.core'
+tar: Removing leading `/' from member names
