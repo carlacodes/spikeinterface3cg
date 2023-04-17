@@ -19,7 +19,7 @@ import spikeinterface.extractors as se
 import spikeinterface.sorters as ss
 import spikeinterface.preprocessing as sipre
 from random import choice
-import spikeinterface.toolkit as st
+# import spikeinterface.toolkit as st
 from spikeinterface.sorters import Kilosort2Sorter
 from spikeinterface.exporters import export_to_phy, export_report
 
@@ -66,11 +66,11 @@ class TDTData:
         probe.set_device_channel_indices(channel_indices - 1)
         recording = recording.set_probe(probe)
         #add saturation removal
-        recording_cmr = st.common_reference(recording, reference='global', operator='median')
+        recording_cmr = sipre.common_reference(recording, reference='global', operator='median')
         print(recording_cmr)
 
         recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.1, direction = 'both', before_ms = 500, after_ms =500)
-        recording_f = st.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
+        recording_f = sipre.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
         print(recording_f)
 
 
@@ -139,9 +139,9 @@ def preprocess_data_cg(data):
     probe.set_device_channel_indices(channel_indices - 1)
     recording = recording.set_probe(probe)
 
-    recording_f = st.bandpass_filter(recording, freq_min=300, freq_max=6000)
+    recording_f =sipre.bandpass_filter(recording, freq_min=300, freq_max=6000)
     print(recording_f)
-    recording_cmr = st.common_reference(recording_f, reference='global', operator='median')
+    recording_cmr = sipre.common_reference(recording_f, reference='global', operator='median')
     print(recording_cmr)
 
     # self.recording_preprocessed = recording_cmr
