@@ -22,6 +22,7 @@ from random import choice
 # import spikeinterface.toolkit as st
 from spikeinterface.sorters import Kilosort2Sorter
 from spikeinterface.exporters import export_to_phy, export_report
+from spikesorting_scripts.io.customtdtrecording_extractor import CustomTdtRecordingExtractor
 
 from spikeinterface import NumpyRecording, NumpySorting
 from spikeinterface import append_recordings, concatenate_recordings
@@ -43,10 +44,10 @@ class TDTData:
     store: list
 
     def load_tdtRec(self):
-        self.recording = se.CustomTdtRecordingExtractor(self.dp, store=self.store)
+        self.recording = CustomTdtRecordingExtractor(self.dp, store=self.store)
 
     def preprocess_data(self):
-        recording = se.CustomTdtRecordingExtractor(self.dp, store=self.store)
+        recording = CustomTdtRecordingExtractor(self.dp, store=self.store)
 
         probe = generate_multi_columns_probe(num_columns=8,
                                              num_contact_per_column=4,
@@ -119,7 +120,7 @@ class TDTData:
 
 
 def preprocess_data_cg(data):
-    recording = se.CustomTdtRecordingExtractor(data.dp, store=data.store)
+    recording = CustomTdtRecordingExtractor(data.dp, store=data.store)
 
     probe = generate_multi_columns_probe(num_columns=8,
                                              num_contact_per_column=4,
@@ -138,14 +139,18 @@ def preprocess_data_cg(data):
 
     probe.set_device_channel_indices(channel_indices - 1)
     recording = recording.set_probe(probe)
-
-    recording_f =sipre.bandpass_filter(recording, freq_min=300, freq_max=6000)
-    print(recording_f)
-    recording_cmr = sipre.common_reference(recording_f, reference='global', operator='median')
+    #add saturation removal
+    recording_cmr = sipre.common_reference(recording, reference='global', operator='median')
     print(recording_cmr)
 
+    recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.1, direction = 'both', before_ms = 500, after_ms =500)
+    recording_f = sipre.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
+    print(recording_f)
+
+
+
     # self.recording_preprocessed = recording_cmr
-    return recording_cmr
+    return recording_f
 
 
 def run_ks2_cg(data, output_folder):
@@ -195,6 +200,7 @@ def save_as_phy_alone(data_test, rec):
 def main():
     #/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella
     datadir = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella')
+   
     logger.info('at main function')
     dp = datadir / 'BlockNellie-162'
     store = ['BB_4', 'BB_5']
@@ -216,8 +222,10 @@ def main():
             continue
 
         if os.path.isdir(dp2):
-            print(i)
+
             try:
+                print('path found')
+
                 data = TDTData(dp2, store)
                 new_data = preprocess_data_cg(data)
                 recording_list.append(new_data)
