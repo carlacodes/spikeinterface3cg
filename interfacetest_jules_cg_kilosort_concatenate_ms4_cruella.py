@@ -123,34 +123,35 @@ def preprocess_data_cg(data):
     recording = CustomTdtRecordingExtractor(data.dp, store=data.store)
 
     probe = generate_multi_columns_probe(num_columns=8,
-                                             num_contact_per_column=4,
-                                             xpitch=350, ypitch=350,
-                                             contact_shapes='circle')
+                                         num_contact_per_column=4,
+                                         xpitch=350, ypitch=350,
+                                         contact_shapes='circle')
     probe.create_auto_shape('rect')
 
     channel_indices = np.array([29, 31, 13, 15,
-                                    25, 27, 9, 11,
-                                    30, 32, 14, 16,
-                                    26, 28, 10, 12,
-                                    24, 22, 8, 6,
-                                    20, 18, 4, 2,
-                                    23, 21, 7, 5,
-                                    19, 17, 3, 1])
+                                25, 27, 9, 11,
+                                30, 32, 14, 16,
+                                26, 28, 10, 12,
+                                24, 22, 8, 6,
+                                20, 18, 4, 2,
+                                23, 21, 7, 5,
+                                19, 17, 3, 1])
 
     probe.set_device_channel_indices(channel_indices - 1)
     recording = recording.set_probe(probe)
-    #add saturation removal
+    # add saturation removal
     recording_cmr = sipre.common_reference(recording, reference='global', operator='median')
     print(recording_cmr)
 
-    recording_f0 = sipre.blank_saturation(recording_cmr, abs_threshold = None, quantile_threshold = 0.1, direction = 'both', before_ms = 500, after_ms =500)
+    recording_f0 = sipre.blank_staturation(recording_cmr, abs_threshold=None, quantile_threshold=0.1,
+                                          direction='both', ms_before=500, ms_after=500)
     recording_f = sipre.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
     print(recording_f)
 
-
+    recording_cmr = recording_f
 
     # self.recording_preprocessed = recording_cmr
-    return recording_f
+    return recording_cmr
 
 
 def run_ks2_cg(data, output_folder):
@@ -223,16 +224,16 @@ def main():
 
         if os.path.isdir(dp2):
 
-            try:
-                print('path found')
+            
+            print('path found')
 
-                data = TDTData(dp2, store)
-                new_data = preprocess_data_cg(data)
-                recording_list.append(new_data)
+            data = TDTData(dp2, store)
+            new_data = preprocess_data_cg(data)
+            recording_list.append(new_data)
 
-            except:
-                print('error in loading TDT data')
-                continue
+            # except:
+            #     print('error in loading TDT data')
+            #     continue
         else:
             continue
 

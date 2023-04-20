@@ -1,0 +1,171 @@
+Currently Loaded Modulefiles:
+  1) gcc-libs/4.9.2                   13) giflib/5.1.1
+  2) cmake/3.21.1                     14) emacs/28.1
+  3) flex/2.5.39                      15) tmux/3.3a
+  4) git/2.32.0                       16) mrxvt/0.5.4
+  5) apr/1.7.0                        17) userscripts/1.4.0
+  6) apr-util/1.6.1                   18) rcps-core/1.0.0
+  7) subversion/1.14.1                19) default-modules/2018
+  8) screen/4.9.0                     20) compilers/gnu/4.9.2
+  9) gerun                            21) cuda/10.1.243/gnu-4.9.2
+ 10) nano/2.4.2                       22) python/3.8.6
+ 11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
+ 12) dos2unix/7.3                     24) python3/3.8
+/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/sorters/external/waveclus.py:125: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/sorters/external/waveclus_snippets.py:83: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2023-04-20 01:15:07 INFO     Starting
+2023-04-20 01:15:07 INFO     at main function
+2023-04-20 01:15:07 INFO     variable: BlockNellie-AA-1
+2023-04-20 01:15:07 INFO     variable: BlockNellie-AA-2
+2023-04-20 01:15:13 INFO     variable: BlockNellie-AA-3
+2023-04-20 01:15:16 INFO     variable: BlockNellie-AA-4
+2023-04-20 01:15:17 INFO     variable: BlockNellie-AA-5
+2023-04-20 01:15:21 INFO     variable: BlockNellie-AA-6
+2023-04-20 01:15:27 INFO     variable: BlockNellie-AA-7
+2023-04-20 01:15:32 INFO     variable: BlockNellie-AA-8
+2023-04-20 01:15:32 INFO     variable: BlockNellie-AA-9
+2023-04-20 01:15:36 INFO     variable: BlockNellie-AA-10
+2023-04-20 01:15:42 INFO     variable: BlockNellie-AA-11
+2023-04-20 01:15:46 INFO     variable: BlockNellie-AA-12
+2023-04-20 01:15:51 INFO     variable: BlockNellie-AA-13
+2023-04-20 01:15:55 INFO     variable: BlockNellie-AA-14
+2023-04-20 01:15:55 INFO     variable: BlockNellie-AA-15
+2023-04-20 01:15:59 INFO     variable: BlockNellie-AA-16
+2023-04-20 01:16:05 INFO     variable: BlockNellie-AA-17
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-18
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-19
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-20
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-21
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-22
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-23
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-24
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-25
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-26
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-27
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-28
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-29
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-30
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-31
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-32
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-33
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-34
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-35
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-36
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-37
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-38
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-39
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-40
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-41
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-42
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-43
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-44
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-45
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-46
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-47
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-48
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-49
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-50
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-51
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-52
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-53
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-54
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-55
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-56
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-57
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-58
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-59
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-60
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-61
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-62
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-63
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-64
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-65
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-66
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-67
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-68
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-69
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-70
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-71
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-72
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-73
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-74
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-75
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-76
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-77
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-78
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-79
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-80
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-81
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-82
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-83
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-84
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-85
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-86
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-87
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-88
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-89
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-90
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-91
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-92
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-93
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-94
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-95
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-96
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-97
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-98
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-99
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-100
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-101
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-102
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-103
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-104
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-105
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-106
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-107
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-108
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-109
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-110
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-111
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-112
+2023-04-20 01:16:08 INFO     variable: BlockNellie-AA-113
+2023-04-20 01:16:14 INFO     variable: BlockNellie-AA-114
+2023-04-20 01:16:17 INFO     variable: BlockNellie-AA-115
+2023-04-20 01:16:22 INFO     variable: BlockNellie-AA-116
+2023-04-20 01:16:27 INFO     variable: BlockNellie-AA-117
+2023-04-20 01:16:27 INFO     variable: BlockNellie-AA-118
+2023-04-20 01:16:27 INFO     variable: BlockNellie-AA-119
+2023-04-20 01:16:31 INFO     variable: BlockNellie-AA-120
+2023-04-20 01:16:32 INFO     variable: BlockNellie-AA-121
+2023-04-20 01:16:35 INFO     variable: BlockNellie-AA-122
+2023-04-20 01:16:40 INFO     variable: BlockNellie-AA-123
+2023-04-20 01:16:43 INFO     variable: BlockNellie-AA-124
+2023-04-20 01:16:49 INFO     variable: BlockNellie-AA-125
+2023-04-20 01:16:53 INFO     variable: BlockNellie-AA-126
+2023-04-20 01:16:57 INFO     variable: BlockNellie-AA-127
+2023-04-20 01:16:57 INFO     variable: BlockNellie-AA-128
+2023-04-20 01:17:03 INFO     variable: BlockNellie-AA-129
+2023-04-20 01:17:06 INFO     variable: BlockNellie-AA-130
+2023-04-20 01:17:11 INFO     variable: BlockNellie-AA-131
+2023-04-20 01:17:16 INFO     variable: BlockNellie-AA-132
+2023-04-20 01:17:22 INFO     variable: BlockNellie-AA-133
+2023-04-20 01:17:26 INFO     variable: BlockNellie-AA-134
+2023-04-20 01:17:30 INFO     variable: BlockNellie-AA-135
+Traceback (most recent call last):
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_cruella.py", line 263, in <module>
+    main()
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_cruella.py", line 243, in main
+    rec = concatenate_recordings(recording_list)
+  File "/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/core/core_tools.py", line 28, in reader_func
+    return source_class(*args, **kwargs)
+  File "/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/core/segmentutils.py", line 117, in __init__
+    one_rec = append_recordings(recording_list, sampling_frequency_max_diff=sampling_frequency_max_diff)
+  File "/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/core/core_tools.py", line 28, in reader_func
+    return source_class(*args, **kwargs)
+  File "/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/core/segmentutils.py", line 48, in __init__
+    rec0 = recording_list[0]
+IndexError: list index out of range
+tar: Removing leading `/' from member names
