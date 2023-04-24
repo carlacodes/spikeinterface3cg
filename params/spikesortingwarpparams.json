@@ -1,0 +1,39 @@
+{
+    "logpath": "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg",
+
+    "datadir": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella",
+
+    "rec_name": "2023_01_24-2023_03_01",
+
+    "streams": ["BB_4", "BB_5"],
+
+    "sorter_list": ["mountainsort4"],
+
+    "sorter_params":
+    {
+        "mountainsort4":
+        {
+            "adjacency_radius": 20,
+            "filter": false,
+            "whiten": false,
+            "num_workers": 20
+        }
+    },
+
+    "working_directory": "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg",
+
+    "output_folder": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/ms4output21042023",
+    
+    "sorter_paths":
+    {
+        "kilosort2_path": "/home/zceccgr/Scratch/zceccgr/Kilosort-2.0"
+    },
+
+    "job_kwargs":
+    {
+        "n_jobs": 20,
+        "chunk_size": 30000
+    }
+
+
+}

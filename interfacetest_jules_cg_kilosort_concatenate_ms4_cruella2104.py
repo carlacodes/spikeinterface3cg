@@ -18,6 +18,7 @@ import spikeinterface as si
 import spikeinterface.extractors as se
 import spikeinterface.sorters as ss
 import spikeinterface.preprocessing as sipre
+import spikeinterface.core as sc
 from random import choice
 # import spikeinterface.toolkit as st
 from spikeinterface.sorters import Kilosort2Sorter
@@ -42,6 +43,9 @@ logger.info('Starting')
 class TDTData:
     dp: str
     store: list
+
+        
+    
 
     def load_tdtRec(self):
         self.recording = CustomTdtRecordingExtractor(self.dp, store=self.store)
@@ -101,7 +105,7 @@ class TDTData:
                                               remove_if_exists=True)
 
         self.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-        self.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
+        self.we.run_extract_waveforms(n_jobs=20, chunk_size=30000)
         print(self.we)
 
         export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput13',
@@ -112,12 +116,18 @@ class TDTData:
                                               remove_if_exists=True)
 
         self.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-        self.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
+        self.we.run_extract_waveforms(n_jobs=20, chunk_size=30000)
         print(self.we)
 
         export_to_phy(self.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput13',
                       compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
-
+def compute_rec_power(rec):
+        subset_data = sc.get_random_data_chunks(rec, num_chunks_per_segment=100,
+                                    chunk_size=10000,
+                                    seed=0,
+                                    )
+        power = np.mean(np.abs(subset_data))
+        return power
 
 def preprocess_data_cg(data):
     recording = CustomTdtRecordingExtractor(data.dp, store=data.store)
@@ -136,21 +146,25 @@ def preprocess_data_cg(data):
                                 20, 18, 4, 2,
                                 23, 21, 7, 5,
                                 19, 17, 3, 1])
+    # if data.store.contains('BB_2'):
+    #     #flip channel indices if the data is from BB2 OR BB3
+    #     channel_indices = np.fliplr(channel_indices)
 
     probe.set_device_channel_indices(channel_indices - 1)
     recording = recording.set_probe(probe)
     # add saturation removal
-    recording_pre = sipre.common_reference(recording, reference='global', operator='median')
-    recording_pre = sipre.remove_disconnection_event(recording_pre,
-                            compute_medians="random",
-                            chunk_size= int(recording_pre.get_sampling_frequency()*3),
-                            n_median_threshold=3,
-                            n_peaks=0,
-                            )
-    recording_pre = sipre.bandpass_filter(recording_pre, freq_min=300, freq_max=6000)
-    recording_pre = sipre.whiten(recording_pre, dtype='float32')
+    recording_cmr = sipre.common_reference(recording, reference='global', operator='median')
+    print(recording_cmr)
+
+    recording_f0 = sipre.blank_staturation(recording_cmr, abs_threshold=None, quantile_threshold=0.1,
+                                          direction='both', ms_before=500, ms_after=500)
+    recording_f = sipre.bandpass_filter(recording_f0, freq_min=300, freq_max=6000)
+    print(recording_f)
+
+    recording_cmr = recording_f
+
     # self.recording_preprocessed = recording_cmr
-    return recording_pre
+    return recording_cmr
 
 
 def run_ks2_cg(data, output_folder):
@@ -165,8 +179,10 @@ def run_mountainsort4_cg(data, output_folder):
     #params = {'projection_threshold' : [8, 3], 'detect_threshold': 5}
     logger.info('running mountainsort4')
 
+
     data.sorting_mountainsort4 = ss.run_mountainsort4(recording=data,
-                                       output_folder=output_folder)
+                                                      output_folder=output_folder, whiten = False, 
+                                                      adjacency_radius = 20,filter = False, num_workers = 20)
 
     print(data.sorting_mountainsort4 )
     return data
@@ -189,7 +205,7 @@ def save_as_phy_alone(data_test, rec):
                                             remove_if_exists=True)
 
     data_test.we.set_params(ms_before=2., ms_after=2., max_spikes_per_unit=1000)
-    data_test.we.run_extract_waveforms(n_jobs=30, chunk_size=30000)
+    data_test.we.run_extract_waveforms(n_jobs=20, chunk_size=30000)
     print(data_test.we)
     export_to_phy(data_test.we, '/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data//F1815_Cruella//wpsoutput12042023bb4bb5//phy/',
                         compute_pc_features=False, compute_amplitudes=True, copy_binary=True)
@@ -205,6 +221,7 @@ def main():
     dp = datadir / 'BlockNellie-162'
     store = ['BB_4', 'BB_5']
     recording_list = []
+    powers = []
 
     ##If using kilosort, this spike sorter is going to call the latest version of MATLAB irrespective of what you use normally for kilosort,
     output_folder = Path('/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/wpsoutput12042023bb4bb5')
@@ -231,6 +248,7 @@ def main():
                 data = TDTData(dp2, store)
                 new_data = preprocess_data_cg(data)
                 recording_list.append(new_data)
+                # powers.append(compute_rec_power(data))
 
             except:
                 print('error in loading TDT data')
@@ -239,7 +257,8 @@ def main():
             continue
 
 
-        #need to add condiitonal to check if streams are same length BB2 isequal BB3?
+    # recording_list= [recording_list[i] for i, power in enumerate(powers) if power < 2*np.median(powers) and power > 0]
+
     print('recording list:', recording_list)
     rec = concatenate_recordings(recording_list)
     #only looking at the fourth row
@@ -253,7 +272,6 @@ def main():
 
     print('running mountainsort sorter now')
     
-
     data_test = run_mountainsort4_cg(rec, output_folder=output_folder)
 
     save_as_phy_alone(data_test, rec)

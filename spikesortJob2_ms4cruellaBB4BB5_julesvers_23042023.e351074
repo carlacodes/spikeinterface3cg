@@ -11,14 +11,9 @@ Currently Loaded Modulefiles:
  10) nano/2.4.2                       22) python/3.8.6
  11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
  12) dos2unix/7.3                     24) python3/3.8
-/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/sorters/external/waveclus.py:125: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
-  if cls.check_compiled():
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/lustre/home/zceccgr/Scratch/spikeinterface/spikeinterface/sorters/external/waveclus_snippets.py:83: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='UTF-8'>
-  if cls.check_compiled():
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/var/opt/sge/node-b00a-003/job_scripts/351074: line 58: /home/zceccgr/envlib/spkenv2/bin/activate: No such file or directory
 Traceback (most recent call last):
-  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/interfacetest_jules_cg_kilosort_concatenate_ms4_cruella.py", line 22, in <module>
-    import spikeinterface.toolkit as st
-ModuleNotFoundError: No module named 'spikeinterface.toolkit'
+  File "/home/zceccgr/Scratch/zceccgr/spikeinterface3cg/concatenated_warp_jules_cruella21042023.py", line 21, in <module>
+    import spikeinterface.preprocessing as spre
+ModuleNotFoundError: No module named 'spikeinterface.preprocessing'
 tar: Removing leading `/' from member names

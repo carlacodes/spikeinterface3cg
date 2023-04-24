@@ -1,0 +1,3097 @@
+{
+    "class": "spikeinterface.preprocessing.whiten.WhitenRecording",
+    "module": "spikeinterface",
+    "kwargs": {
+        "recording": {
+            "class": "spikeinterface.preprocessing.filter.BandpassFilterRecording",
+            "module": "spikeinterface",
+            "kwargs": {
+                "recording": {
+                    "class": "spikeinterface.preprocessing.disconnection.RemoveDisconnectionEventRecording",
+                    "module": "spikeinterface",
+                    "kwargs": {
+                        "recording": {
+                            "class": "spikeinterface.preprocessing.common_reference.CommonReferenceRecording",
+                            "module": "spikeinterface",
+                            "kwargs": {
+                                "recording": {
+                                    "class": "spikeinterface.core.segmentutils.ConcatenateSegmentRecording",
+                                    "module": "spikeinterface",
+                                    "kwargs": {
+                                        "recording_list": [
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-1/F1815_Cruella_BlockNellie-AA-1.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-2/F1815_Cruella_BlockNellie-AA-2.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-3/F1815_Cruella_BlockNellie-AA-3.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-4/F1815_Cruella_BlockNellie-AA-4.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-5/F1815_Cruella_BlockNellie-AA-5.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-6/F1815_Cruella_BlockNellie-AA-6.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-7/F1815_Cruella_BlockNellie-AA-7.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-8/F1815_Cruella_BlockNellie-AA-8.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-9/F1815_Cruella_BlockNellie-AA-9.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-10/F1815_Cruella_BlockNellie-AA-10.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-11/F1815_Cruella_BlockNellie-AA-11.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-12/F1815_Cruella_BlockNellie-AA-12.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-14/F1815_Cruella_BlockNellie-AA-14.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-15/F1815_Cruella_BlockNellie-AA-15.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-16/F1815_Cruella_BlockNellie-AA-16.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-17/F1815_Cruella_BlockNellie-AA-17.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-113/F1815_Cruella_BlockNellie-AA-113.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-114/F1815_Cruella_BlockNellie-AA-114.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-115/F1815_Cruella_BlockNellie-AA-115.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-116/F1815_Cruella_BlockNellie-AA-116.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-117/F1815_Cruella_BlockNellie-AA-117.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-118/F1815_Cruella_BlockNellie-AA-118.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-119/F1815_Cruella_BlockNellie-AA-119.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-121/F1815_Cruella_BlockNellie-AA-121.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-122/F1815_Cruella_BlockNellie-AA-122.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-123/F1815_Cruella_BlockNellie-AA-123.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-124/F1815_Cruella_BlockNellie-AA-124.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-125/F1815_Cruella_BlockNellie-AA-125.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-126/F1815_Cruella_BlockNellie-AA-126.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-127/F1815_Cruella_BlockNellie-AA-127.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-128/F1815_Cruella_BlockNellie-AA-128.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-129/F1815_Cruella_BlockNellie-AA-129.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-131/F1815_Cruella_BlockNellie-AA-131.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-132/F1815_Cruella_BlockNellie-AA-132.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-133/F1815_Cruella_BlockNellie-AA-133.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-134/F1815_Cruella_BlockNellie-AA-134.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-135/F1815_Cruella_BlockNellie-AA-135.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "class": "spikeinterface.extractors.neoextractors.tdt.TdtRecordingExtractor",
+                                                "module": "spikeinterface",
+                                                "kwargs": {
+                                                    "all_annotations": false,
+                                                    "stream_name": "BB_4",
+                                                    "folder_path": "/home/zceccgr/Scratch/zceccgr/Electrophysiological_Data/F1815_Cruella/BlockNellie-AA-136/F1815_Cruella_BlockNellie-AA-136.Tdx"
+                                                },
+                                                "dumpable": true,
+                                                "version": "0.98.0.dev0",
+                                                "relative_paths": false,
+                                                "annotations": {
+                                                    "is_filtered": false
+                                                },
+                                                "properties": {
+                                                    "group": null,
+                                                    "location": null,
+                                                    "gain_to_uV": [
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0,
+                                                        1000000.0
+                                                    ],
+                                                    "offset_to_uV": [
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "ignore_times": true
+                                    },
+                                    "dumpable": true,
+                                    "version": "0.98.0.dev0",
+                                    "relative_paths": false,
+                                    "annotations": {
+                                        "is_filtered": false
+                                    },
+                                    "properties": {
+                                        "group": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "location": [
+                                            [
+                                                2450.0,
+                                                350.0
+                                            ],
+                                            [
+                                                1750.0,
+                                                350.0
+                                            ],
+                                            [
+                                                2450.0,
+                                                0.0
+                                            ],
+                                            [
+                                                1750.0,
+                                                0.0
+                                            ],
+                                            [
+                                                2100.0,
+                                                350.0
+                                            ],
+                                            [
+                                                1400.0,
+                                                350.0
+                                            ],
+                                            [
+                                                2100.0,
+                                                0.0
+                                            ],
+                                            [
+                                                1400.0,
+                                                0.0
+                                            ],
+                                            [
+                                                350.0,
+                                                0.0
+                                            ],
+                                            [
+                                                1050.0,
+                                                0.0
+                                            ],
+                                            [
+                                                350.0,
+                                                350.0
+                                            ],
+                                            [
+                                                1050.0,
+                                                350.0
+                                            ],
+                                            [
+                                                0.0,
+                                                0.0
+                                            ],
+                                            [
+                                                700.0,
+                                                0.0
+                                            ],
+                                            [
+                                                0.0,
+                                                350.0
+                                            ],
+                                            [
+                                                700.0,
+                                                350.0
+                                            ]
+                                        ],
+                                        "gain_to_uV": [
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0,
+                                            1000000.0
+                                        ],
+                                        "offset_to_uV": [
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0,
+                                            0.0
+                                        ]
+                                    }
+                                },
+                                "reference": "global",
+                                "groups": null,
+                                "operator": "median",
+                                "ref_channel_ids": null,
+                                "local_radius": [
+                                    30,
+                                    55
+                                ],
+                                "dtype": "<i2"
+                            },
+                            "dumpable": true,
+                            "version": "0.98.0.dev0",
+                            "relative_paths": false,
+                            "annotations": {
+                                "is_filtered": false
+                            },
+                            "properties": {
+                                "group": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "location": [
+                                    [
+                                        2450.0,
+                                        350.0
+                                    ],
+                                    [
+                                        1750.0,
+                                        350.0
+                                    ],
+                                    [
+                                        2450.0,
+                                        0.0
+                                    ],
+                                    [
+                                        1750.0,
+                                        0.0
+                                    ],
+                                    [
+                                        2100.0,
+                                        350.0
+                                    ],
+                                    [
+                                        1400.0,
+                                        350.0
+                                    ],
+                                    [
+                                        2100.0,
+                                        0.0
+                                    ],
+                                    [
+                                        1400.0,
+                                        0.0
+                                    ],
+                                    [
+                                        350.0,
+                                        0.0
+                                    ],
+                                    [
+                                        1050.0,
+                                        0.0
+                                    ],
+                                    [
+                                        350.0,
+                                        350.0
+                                    ],
+                                    [
+                                        1050.0,
+                                        350.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0
+                                    ],
+                                    [
+                                        700.0,
+                                        0.0
+                                    ],
+                                    [
+                                        0.0,
+                                        350.0
+                                    ],
+                                    [
+                                        700.0,
+                                        350.0
+                                    ]
+                                ],
+                                "gain_to_uV": [
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0,
+                                    1000000.0
+                                ],
+                                "offset_to_uV": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        },
+                        "n_peaks": 0,
+                        "prominence": 0.5,
+                        "fill_value": 0.0,
+                        "n_median_threshold": 3,
+                        "num_chunks_per_segment": 100,
+                        "chunk_size": 73242,
+                        "seed": 0
+                    },
+                    "dumpable": true,
+                    "version": "0.98.0.dev0",
+                    "relative_paths": false,
+                    "annotations": {
+                        "is_filtered": false
+                    },
+                    "properties": {
+                        "group": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "location": [
+                            [
+                                2450.0,
+                                350.0
+                            ],
+                            [
+                                1750.0,
+                                350.0
+                            ],
+                            [
+                                2450.0,
+                                0.0
+                            ],
+                            [
+                                1750.0,
+                                0.0
+                            ],
+                            [
+                                2100.0,
+                                350.0
+                            ],
+                            [
+                                1400.0,
+                                350.0
+                            ],
+                            [
+                                2100.0,
+                                0.0
+                            ],
+                            [
+                                1400.0,
+                                0.0
+                            ],
+                            [
+                                350.0,
+                                0.0
+                            ],
+                            [
+                                1050.0,
+                                0.0
+                            ],
+                            [
+                                350.0,
+                                350.0
+                            ],
+                            [
+                                1050.0,
+                                350.0
+                            ],
+                            [
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                700.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                350.0
+                            ],
+                            [
+                                700.0,
+                                350.0
+                            ]
+                        ],
+                        "gain_to_uV": [
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0,
+                            1000000.0
+                        ],
+                        "offset_to_uV": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                },
+                "freq_min": 300,
+                "freq_max": 6000,
+                "margin_ms": 5.0,
+                "dtype": "<i2"
+            },
+            "dumpable": true,
+            "version": "0.98.0.dev0",
+            "relative_paths": false,
+            "annotations": {
+                "is_filtered": true
+            },
+            "properties": {
+                "group": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "location": [
+                    [
+                        2450.0,
+                        350.0
+                    ],
+                    [
+                        1750.0,
+                        350.0
+                    ],
+                    [
+                        2450.0,
+                        0.0
+                    ],
+                    [
+                        1750.0,
+                        0.0
+                    ],
+                    [
+                        2100.0,
+                        350.0
+                    ],
+                    [
+                        1400.0,
+                        350.0
+                    ],
+                    [
+                        2100.0,
+                        0.0
+                    ],
+                    [
+                        1400.0,
+                        0.0
+                    ],
+                    [
+                        350.0,
+                        0.0
+                    ],
+                    [
+                        1050.0,
+                        0.0
+                    ],
+                    [
+                        350.0,
+                        350.0
+                    ],
+                    [
+                        1050.0,
+                        350.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        700.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        350.0
+                    ],
+                    [
+                        700.0,
+                        350.0
+                    ]
+                ],
+                "gain_to_uV": [
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0,
+                    1000000.0
+                ],
+                "offset_to_uV": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "dtype": "float32",
+        "mode": "global",
+        "radius_um": 100.0,
+        "apply_mean": false,
+        "int_scale": null,
+        "M": null,
+        "W": [
+            [
+                0.13782091210024877,
+                -0.007072630728284685,
+                -0.0022711654023002312,
+                -0.01708825186318105,
+                -0.007307130855624048,
+                -0.006147457792916877,
+                -0.003358439890976562,
+                -0.003196692695498541,
+                -0.001048781539727579,
+                0.001032102426395519,
+                -0.004925250024299982,
+                -0.01724226007993634,
+                -0.0026832730197976057,
+                -0.0069368732915038225,
+                0.0002242699111810704,
+                -2.7335044883733826e-05
+            ],
+            [
+                -0.007072630728284792,
+                0.16229973745938436,
+                0.00032592718436060816,
+                -0.012367973383895945,
+                -0.008586048420124224,
+                -0.012791950247704399,
+                -0.0034712648098684015,
+                -0.004585613313377636,
+                -0.0020974724112415087,
+                0.0007780133714332712,
+                -0.005126869520316357,
+                -0.026210576590386128,
+                -0.004121980546912705,
+                -0.009756765645021596,
+                0.0002252710417379385,
+                -2.3942061174837388e-05
+            ],
+            [
+                -0.0022711654023002815,
+                0.00032592718436063776,
+                0.07987878931705883,
+                0.001948919375764662,
+                -0.00015761804073556896,
+                0.00038106129275075997,
+                -0.0026383255950423153,
+                -9.286264445953308e-05,
+                -0.0077768715693515315,
+                0.0007406771956445194,
+                0.0036503394173049222,
+                0.001422105557864702,
+                0.001482478017503962,
+                0.0017380826351232595,
+                -0.00598369951972003,
+                0.003055363540494997
+            ],
+            [
+                -0.017088251863181008,
+                -0.012367973383895984,
+                0.001948919375764741,
+                0.19557175294347423,
+                -0.012281093983307413,
+                -0.009603749936381327,
+                -0.014970940219743602,
+                -0.005631447118463049,
+                -0.0012117276054267436,
+                0.0016321772006513031,
+                -0.007175159877149988,
+                -0.0297661555611581,
+                -0.005517685060928908,
+                -0.008821282480331604,
+                0.0012707765582469898,
+                0.0009100741598280568
+            ],
+            [
+                -0.007307130855624033,
+                -0.008586048420124087,
+                -0.0001576180407355799,
+                -0.012281093983307496,
+                0.16659912968001242,
+                -0.008312772668494945,
+                -0.0066418601502430605,
+                -0.0051417195935410335,
+                -0.002052353545647885,
+                0.0016929184044237736,
+                -0.010323986272918974,
+                -0.026657321641382934,
+                -0.004368422184446199,
+                -0.009037619421940748,
+                0.0008011296980165365,
+                3.184235982780854e-05
+            ],
+            [
+                -0.006147457792916958,
+                -0.012791950247704418,
+                0.00038106129275077927,
+                -0.009603749936381148,
+                -0.008312772668494903,
+                0.1957660636724369,
+                -0.003052253044654054,
+                -0.0558771484940243,
+                -0.0012549609004699166,
+                -0.000778515143600959,
+                -0.006519418910942685,
+                -0.027019550603274777,
+                -0.0035219630336597962,
+                -0.011305536746099529,
+                -0.00015507632496583457,
+                -0.0014671927419994824
+            ],
+            [
+                -0.003358439890976547,
+                -0.003471264809868406,
+                -0.002638325595042268,
+                -0.014970940219743663,
+                -0.00664186015024306,
+                -0.003052253044653939,
+                0.09449852322518416,
+                -0.0031685401769625332,
+                -0.005179094051428837,
+                -0.0006216494021736901,
+                -0.0026088223262039504,
+                -0.004693610486070301,
+                -0.0013462504550757,
+                -0.002760916263260332,
+                -0.0021679754257493545,
+                -0.0006661436403558252
+            ],
+            [
+                -0.003196692695498513,
+                -0.004585613313377654,
+                -9.286264445949507e-05,
+                -0.0056314471184630765,
+                -0.005141719593541033,
+                -0.05587714849402433,
+                -0.003168540176962576,
+                0.1410657963027987,
+                -0.00133805709334455,
+                -0.002888710480157381,
+                -0.003091303813124715,
+                -0.008452233918725223,
+                -0.0019931810983804914,
+                -0.004432142017941367,
+                7.571412390875016e-07,
+                -0.0006433818879980566
+            ],
+            [
+                -0.0010487815397275716,
+                -0.0020974724112415044,
+                -0.0077768715693516295,
+                -0.0012117276054267212,
+                -0.002052353545647914,
+                -0.0012549609004698797,
+                -0.005179094051428764,
+                -0.0013380570933445243,
+                0.07281859334265225,
+                -0.0026279326373760733,
+                -0.0034360440685819132,
+                -0.003109557780922873,
+                -0.0020843697301013895,
+                -0.0022565731853426674,
+                -0.007546035478480513,
+                -0.001695579472649971
+            ],
+            [
+                0.0010321024263955088,
+                0.0007780133714332444,
+                0.000740677195644545,
+                0.0016321772006512904,
+                0.0016929184044237678,
+                -0.0007785151436009556,
+                -0.000621649402173738,
+                -0.002888710480157449,
+                -0.0026279326373760204,
+                0.07107261002154917,
+                0.0033192699151702457,
+                0.00045242342928084983,
+                0.0014406743656274503,
+                0.0018787712402766788,
+                0.0001236257763611972,
+                0.00228916776626256
+            ],
+            [
+                -0.0049252500242999925,
+                -0.005126869520316234,
+                0.0036503394173049183,
+                -0.007175159877150003,
+                -0.010323986272919002,
+                -0.0065194189109425895,
+                -0.0026088223262039417,
+                -0.0030913038131247877,
+                -0.0034360440685819557,
+                0.0033192699151702457,
+                0.16653383606789757,
+                -0.0288456212796887,
+                -0.003919789770251432,
+                -0.008813931199314428,
+                0.0009307022413153954,
+                0.002257445372902502
+            ],
+            [
+                -0.017242260079936234,
+                -0.02621057659038633,
+                0.001422105557864719,
+                -0.02976615556115812,
+                -0.02665732164138275,
+                -0.027019550603274874,
+                -0.004693610486070291,
+                -0.008452233918725202,
+                -0.003109557780922811,
+                0.0004524234292808228,
+                -0.028845621279688708,
+                0.3515592063301768,
+                -0.012942382828968218,
+                -0.06079948371003379,
+                0.0009489195925829038,
+                -0.004890433562600965
+            ],
+            [
+                -0.0026832730197977033,
+                -0.004121980546912726,
+                0.001482478017503913,
+                -0.005517685060928819,
+                -0.0043684221844462,
+                -0.0035219630336597793,
+                -0.0013462504550757533,
+                -0.0019931810983805265,
+                -0.002084369730101317,
+                0.0014406743656274488,
+                -0.0039197897702514355,
+                -0.012942382828968167,
+                0.10987535301061994,
+                -0.005055576362375934,
+                -0.0031998523214471094,
+                -0.010237265218604399
+            ],
+            [
+                -0.006936873291503767,
+                -0.00975676564502154,
+                0.0017380826351232664,
+                -0.008821282480331705,
+                -0.009037619421940842,
+                -0.011305536746099566,
+                -0.0027609162632602725,
+                -0.004432142017941414,
+                -0.0022565731853426987,
+                0.0018787712402766824,
+                -0.008813931199314383,
+                -0.060799483710033755,
+                -0.005055576362375947,
+                0.21161613384543443,
+                0.00028959131605053504,
+                -0.0015458367130387282
+            ],
+            [
+                0.00022426991118106666,
+                0.00022527104173789694,
+                -0.005983699519719875,
+                0.0012707765582470087,
+                0.0008011296980165297,
+                -0.00015507632496586276,
+                -0.0021679754257493827,
+                7.571412391402404e-07,
+                -0.007546035478480595,
+                0.00012362577636122158,
+                0.0009307022413153286,
+                0.0009489195925829834,
+                -0.0031998523214470578,
+                0.0002895913160505104,
+                0.0780108376710665,
+                -0.0012617674977681164
+            ],
+            [
+                -2.7335044883755046e-05,
+                -2.394206117488457e-05,
+                0.003055363540494817,
+                0.0009100741598280127,
+                3.184235982778227e-05,
+                -0.0014671927419995122,
+                -0.0006661436403558724,
+                -0.0006433818879981125,
+                -0.001695579472649691,
+                0.0022891677662624996,
+                0.0022574453729025017,
+                -0.00489043356260098,
+                -0.010237265218604413,
+                -0.0015458367130387833,
+                -0.0012617674977682663,
+                0.0931023208827521
+            ]
+        ]
+    },
+    "dumpable": true,
+    "version": "0.98.0.dev0",
+    "relative_paths": false,
+    "annotations": {
+        "is_filtered": true,
+        "probe_0_planar_contour": [
+            [
+                -20.0,
+                370.0
+            ],
+            [
+                -20.0,
+                -20.0
+            ],
+            [
+                2470.0,
+                -20.0
+            ],
+            [
+                2470.0,
+                370.0
+            ]
+        ]
+    },
+    "properties": {
+        "group": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "location": [
+            [
+                2450.0,
+                350.0
+            ],
+            [
+                1750.0,
+                350.0
+            ],
+            [
+                2450.0,
+                0.0
+            ],
+            [
+                1750.0,
+                0.0
+            ],
+            [
+                2100.0,
+                350.0
+            ],
+            [
+                1400.0,
+                350.0
+            ],
+            [
+                2100.0,
+                0.0
+            ],
+            [
+                1400.0,
+                0.0
+            ],
+            [
+                350.0,
+                0.0
+            ],
+            [
+                1050.0,
+                0.0
+            ],
+            [
+                350.0,
+                350.0
+            ],
+            [
+                1050.0,
+                350.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                700.0,
+                0.0
+            ],
+            [
+                0.0,
+                350.0
+            ],
+            [
+                700.0,
+                350.0
+            ]
+        ],
+        "gain_to_uV": [
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0,
+            1000000.0
+        ],
+        "offset_to_uV": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+}

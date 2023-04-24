@@ -1,0 +1,112 @@
+Currently Loaded Modulefiles:
+  1) gcc-libs/4.9.2                   13) giflib/5.1.1
+  2) cmake/3.21.1                     14) emacs/28.1
+  3) flex/2.5.39                      15) tmux/3.3a
+  4) git/2.32.0                       16) mrxvt/0.5.4
+  5) apr/1.7.0                        17) userscripts/1.4.0
+  6) apr-util/1.6.1                   18) rcps-core/1.0.0
+  7) subversion/1.14.1                19) default-modules/2018
+  8) screen/4.9.0                     20) compilers/gnu/4.9.2
+  9) gerun                            21) cuda/10.1.243/gnu-4.9.2
+ 10) nano/2.4.2                       22) python/3.8.6
+ 11) nedit/5.6-aug15                  23) openblas/0.3.7-serial/gnu-4.9.2
+ 12) dos2unix/7.3                     24) python3/3.8
+/lustre/home/zceccgr/envlib/spkenv3/lib/python3.8/site-packages/spikeinterface/sorters/external/waveclus.py:125: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/lustre/home/zceccgr/envlib/spkenv3/lib/python3.8/site-packages/spikeinterface/sorters/external/waveclus_snippets.py:83: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='UTF-8'>
+  if cls.check_compiled():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2023-04-24 16:59:03 INFO     Starting
+2023-04-24 16:59:03 INFO     sorter list: ['mountainsort4']
+  0%|          | 0/41 [00:00<?, ?it/s]2023-04-24 16:59:03 INFO     Loading stream BB_4
+  0%|          | 0/41 [00:00<?, ?it/s, loading BlockNellie-AA-1]2023-04-24 16:59:03 INFO     Loading block BlockNellie-AA-1
+  2%|▏         | 1/41 [00:04<02:48,  4.20s/it, loading BlockNellie-AA-1]  2%|▏         | 1/41 [00:04<02:48,  4.20s/it, loading BlockNellie-AA-2]2023-04-24 16:59:07 INFO     Loading block BlockNellie-AA-2
+  5%|▍         | 2/41 [00:08<02:53,  4.44s/it, loading BlockNellie-AA-2]  5%|▍         | 2/41 [00:08<02:53,  4.44s/it, loading BlockNellie-AA-3]2023-04-24 16:59:12 INFO     Loading block BlockNellie-AA-3
+  7%|▋         | 3/41 [00:12<02:28,  3.90s/it, loading BlockNellie-AA-3]  7%|▋         | 3/41 [00:12<02:28,  3.90s/it, loading BlockNellie-AA-4]2023-04-24 16:59:15 INFO     Loading block BlockNellie-AA-4
+ 10%|▉         | 4/41 [00:15<02:15,  3.65s/it, loading BlockNellie-AA-4] 10%|▉         | 4/41 [00:15<02:15,  3.65s/it, loading BlockNellie-AA-5]2023-04-24 16:59:18 INFO     Loading block BlockNellie-AA-5
+ 12%|█▏        | 5/41 [00:19<02:16,  3.80s/it, loading BlockNellie-AA-5] 12%|█▏        | 5/41 [00:19<02:16,  3.80s/it, loading BlockNellie-AA-6]2023-04-24 16:59:22 INFO     Loading block BlockNellie-AA-6
+ 15%|█▍        | 6/41 [00:23<02:21,  4.05s/it, loading BlockNellie-AA-6] 15%|█▍        | 6/41 [00:23<02:21,  4.05s/it, loading BlockNellie-AA-7]2023-04-24 16:59:27 INFO     Loading block BlockNellie-AA-7
+ 17%|█▋        | 7/41 [00:27<02:12,  3.90s/it, loading BlockNellie-AA-7] 17%|█▋        | 7/41 [00:27<02:12,  3.90s/it, loading BlockNellie-AA-8]2023-04-24 16:59:31 INFO     Loading block BlockNellie-AA-8
+ 20%|█▉        | 8/41 [00:32<02:17,  4.17s/it, loading BlockNellie-AA-8] 20%|█▉        | 8/41 [00:32<02:17,  4.17s/it, loading BlockNellie-AA-9]2023-04-24 16:59:35 INFO     Loading block BlockNellie-AA-9
+ 22%|██▏       | 9/41 [00:35<02:05,  3.94s/it, loading BlockNellie-AA-9] 22%|██▏       | 9/41 [00:35<02:05,  3.94s/it, loading BlockNellie-AA-10]2023-04-24 16:59:39 INFO     Loading block BlockNellie-AA-10
+ 24%|██▍       | 10/41 [00:40<02:13,  4.30s/it, loading BlockNellie-AA-10] 24%|██▍       | 10/41 [00:40<02:13,  4.30s/it, loading BlockNellie-AA-11]2023-04-24 16:59:44 INFO     Loading block BlockNellie-AA-11
+ 27%|██▋       | 11/41 [00:44<02:01,  4.05s/it, loading BlockNellie-AA-11] 27%|██▋       | 11/41 [00:44<02:01,  4.05s/it, loading BlockNellie-AA-12]2023-04-24 16:59:47 INFO     Loading block BlockNellie-AA-12
+ 29%|██▉       | 12/41 [00:48<01:57,  4.05s/it, loading BlockNellie-AA-12] 29%|██▉       | 12/41 [00:48<01:57,  4.05s/it, loading BlockNellie-AA-13]2023-04-24 16:59:51 INFO     Loading block BlockNellie-AA-13
+ 32%|███▏      | 13/41 [00:55<02:19,  4.98s/it, loading BlockNellie-AA-13] 32%|███▏      | 13/41 [00:55<02:19,  4.98s/it, loading BlockNellie-AA-14]2023-04-24 16:59:58 INFO     Loading block BlockNellie-AA-14
+ 34%|███▍      | 14/41 [00:59<02:07,  4.72s/it, loading BlockNellie-AA-14] 34%|███▍      | 14/41 [00:59<02:07,  4.72s/it, loading BlockNellie-AA-15]2023-04-24 17:00:03 INFO     Loading block BlockNellie-AA-15
+ 37%|███▋      | 15/41 [01:03<01:53,  4.37s/it, loading BlockNellie-AA-15] 37%|███▋      | 15/41 [01:03<01:53,  4.37s/it, loading BlockNellie-AA-16]2023-04-24 17:00:06 INFO     Loading block BlockNellie-AA-16
+ 39%|███▉      | 16/41 [01:07<01:46,  4.26s/it, loading BlockNellie-AA-16] 39%|███▉      | 16/41 [01:07<01:46,  4.26s/it, loading BlockNellie-AA-17]2023-04-24 17:00:10 INFO     Loading block BlockNellie-AA-17
+ 41%|████▏     | 17/41 [01:10<01:32,  3.85s/it, loading BlockNellie-AA-17] 41%|████▏     | 17/41 [01:10<01:32,  3.85s/it, loading BlockNellie-AA-113]2023-04-24 17:00:13 INFO     Loading block BlockNellie-AA-113
+ 44%|████▍     | 18/41 [01:14<01:34,  4.12s/it, loading BlockNellie-AA-113] 44%|████▍     | 18/41 [01:14<01:34,  4.12s/it, loading BlockNellie-AA-114]2023-04-24 17:00:18 INFO     Loading block BlockNellie-AA-114
+ 46%|████▋     | 19/41 [01:18<01:25,  3.90s/it, loading BlockNellie-AA-114] 46%|████▋     | 19/41 [01:18<01:25,  3.90s/it, loading BlockNellie-AA-115]2023-04-24 17:00:21 INFO     Loading block BlockNellie-AA-115
+ 49%|████▉     | 20/41 [01:22<01:25,  4.09s/it, loading BlockNellie-AA-115] 49%|████▉     | 20/41 [01:22<01:25,  4.09s/it, loading BlockNellie-AA-116]2023-04-24 17:00:26 INFO     Loading block BlockNellie-AA-116
+ 51%|█████     | 21/41 [01:27<01:23,  4.18s/it, loading BlockNellie-AA-116] 51%|█████     | 21/41 [01:27<01:23,  4.18s/it, loading BlockNellie-AA-117]2023-04-24 17:00:30 INFO     Loading block BlockNellie-AA-117
+ 54%|█████▎    | 22/41 [01:30<01:17,  4.09s/it, loading BlockNellie-AA-117] 54%|█████▎    | 22/41 [01:30<01:17,  4.09s/it, loading BlockNellie-AA-118]2023-04-24 17:00:34 INFO     Loading block BlockNellie-AA-118
+ 56%|█████▌    | 23/41 [01:33<01:06,  3.67s/it, loading BlockNellie-AA-118] 56%|█████▌    | 23/41 [01:33<01:06,  3.67s/it, loading BlockNellie-AA-119]2023-04-24 17:00:37 INFO     Loading block BlockNellie-AA-119
+ 59%|█████▊    | 24/41 [01:37<01:02,  3.68s/it, loading BlockNellie-AA-119] 59%|█████▊    | 24/41 [01:37<01:02,  3.68s/it, loading BlockNellie-AA-120]2023-04-24 17:00:40 INFO     Loading block BlockNellie-AA-120
+ 61%|██████    | 25/41 [01:38<00:46,  2.90s/it, loading BlockNellie-AA-120] 61%|██████    | 25/41 [01:38<00:46,  2.90s/it, loading BlockNellie-AA-121]2023-04-24 17:00:41 INFO     Loading block BlockNellie-AA-121
+ 63%|██████▎   | 26/41 [01:42<00:47,  3.13s/it, loading BlockNellie-AA-121] 63%|██████▎   | 26/41 [01:42<00:47,  3.13s/it, loading BlockNellie-AA-122]2023-04-24 17:00:45 INFO     Loading block BlockNellie-AA-122
+ 66%|██████▌   | 27/41 [01:46<00:49,  3.51s/it, loading BlockNellie-AA-122] 66%|██████▌   | 27/41 [01:46<00:49,  3.51s/it, loading BlockNellie-AA-123]2023-04-24 17:00:50 INFO     Loading block BlockNellie-AA-123
+ 68%|██████▊   | 28/41 [01:49<00:45,  3.49s/it, loading BlockNellie-AA-123] 68%|██████▊   | 28/41 [01:49<00:45,  3.49s/it, loading BlockNellie-AA-124]2023-04-24 17:00:53 INFO     Loading block BlockNellie-AA-124
+ 71%|███████   | 29/41 [01:56<00:52,  4.34s/it, loading BlockNellie-AA-124] 71%|███████   | 29/41 [01:56<00:52,  4.34s/it, loading BlockNellie-AA-125]2023-04-24 17:00:59 INFO     Loading block BlockNellie-AA-125
+ 73%|███████▎  | 30/41 [01:59<00:45,  4.10s/it, loading BlockNellie-AA-125] 73%|███████▎  | 30/41 [01:59<00:45,  4.10s/it, loading BlockNellie-AA-126]2023-04-24 17:01:03 INFO     Loading block BlockNellie-AA-126
+ 76%|███████▌  | 31/41 [02:04<00:41,  4.14s/it, loading BlockNellie-AA-126] 76%|███████▌  | 31/41 [02:04<00:41,  4.14s/it, loading BlockNellie-AA-127]2023-04-24 17:01:07 INFO     Loading block BlockNellie-AA-127
+ 78%|███████▊  | 32/41 [02:07<00:36,  4.01s/it, loading BlockNellie-AA-127] 78%|███████▊  | 32/41 [02:07<00:36,  4.01s/it, loading BlockNellie-AA-128]2023-04-24 17:01:11 INFO     Loading block BlockNellie-AA-128
+ 80%|████████  | 33/41 [02:12<00:34,  4.31s/it, loading BlockNellie-AA-128] 80%|████████  | 33/41 [02:12<00:34,  4.31s/it, loading BlockNellie-AA-129]2023-04-24 17:01:16 INFO     Loading block BlockNellie-AA-129
+ 83%|████████▎ | 34/41 [02:15<00:27,  3.96s/it, loading BlockNellie-AA-129] 83%|████████▎ | 34/41 [02:15<00:27,  3.96s/it, loading BlockNellie-AA-130]2023-04-24 17:01:19 INFO     Loading block BlockNellie-AA-130
+ 85%|████████▌ | 35/41 [02:20<00:24,  4.13s/it, loading BlockNellie-AA-130] 85%|████████▌ | 35/41 [02:20<00:24,  4.13s/it, loading BlockNellie-AA-131]2023-04-24 17:01:23 INFO     Loading block BlockNellie-AA-131
+ 88%|████████▊ | 36/41 [02:25<00:21,  4.26s/it, loading BlockNellie-AA-131] 88%|████████▊ | 36/41 [02:25<00:21,  4.26s/it, loading BlockNellie-AA-132]2023-04-24 17:01:28 INFO     Loading block BlockNellie-AA-132
+ 90%|█████████ | 37/41 [02:30<00:17,  4.49s/it, loading BlockNellie-AA-132] 90%|█████████ | 37/41 [02:30<00:17,  4.49s/it, loading BlockNellie-AA-133]2023-04-24 17:01:33 INFO     Loading block BlockNellie-AA-133
+ 93%|█████████▎| 38/41 [02:34<00:13,  4.45s/it, loading BlockNellie-AA-133] 93%|█████████▎| 38/41 [02:34<00:13,  4.45s/it, loading BlockNellie-AA-134]2023-04-24 17:01:37 INFO     Loading block BlockNellie-AA-134
+ 95%|█████████▌| 39/41 [02:37<00:08,  4.17s/it, loading BlockNellie-AA-134] 95%|█████████▌| 39/41 [02:37<00:08,  4.17s/it, loading BlockNellie-AA-135]2023-04-24 17:01:41 INFO     Loading block BlockNellie-AA-135
+ 98%|█████████▊| 40/41 [02:41<00:04,  4.01s/it, loading BlockNellie-AA-135] 98%|█████████▊| 40/41 [02:41<00:04,  4.01s/it, loading BlockNellie-AA-136]2023-04-24 17:01:45 INFO     Loading block BlockNellie-AA-136
+100%|██████████| 41/41 [02:45<00:00,  4.14s/it, loading BlockNellie-AA-136]100%|██████████| 41/41 [02:45<00:00,  4.05s/it, loading BlockNellie-AA-136]
+2023-04-24 17:01:49 INFO     Loading stream BB_5
+2023-04-24 17:01:49 INFO     Loading block BlockNellie-AA-1
+2023-04-24 17:01:53 INFO     Loading block BlockNellie-AA-2
+2023-04-24 17:01:58 INFO     Loading block BlockNellie-AA-3
+2023-04-24 17:02:02 INFO     Loading block BlockNellie-AA-4
+2023-04-24 17:02:05 INFO     Loading block BlockNellie-AA-5
+2023-04-24 17:02:09 INFO     Loading block BlockNellie-AA-6
+2023-04-24 17:02:14 INFO     Loading block BlockNellie-AA-7
+2023-04-24 17:02:17 INFO     Loading block BlockNellie-AA-8
+2023-04-24 17:02:23 INFO     Loading block BlockNellie-AA-9
+2023-04-24 17:02:27 INFO     Loading block BlockNellie-AA-10
+2023-04-24 17:02:32 INFO     Loading block BlockNellie-AA-11
+2023-04-24 17:02:35 INFO     Loading block BlockNellie-AA-12
+2023-04-24 17:02:39 INFO     Loading block BlockNellie-AA-13
+2023-04-24 17:02:43 INFO     Loading block BlockNellie-AA-14
+2023-04-24 17:02:47 INFO     Loading block BlockNellie-AA-15
+2023-04-24 17:02:51 INFO     Loading block BlockNellie-AA-16
+2023-04-24 17:02:56 INFO     Loading block BlockNellie-AA-17
+2023-04-24 17:02:58 INFO     Loading block BlockNellie-AA-113
+2023-04-24 17:03:03 INFO     Loading block BlockNellie-AA-114
+2023-04-24 17:03:06 INFO     Loading block BlockNellie-AA-115
+2023-04-24 17:03:11 INFO     Loading block BlockNellie-AA-116
+2023-04-24 17:03:15 INFO     Loading block BlockNellie-AA-117
+2023-04-24 17:03:18 INFO     Loading block BlockNellie-AA-118
+2023-04-24 17:03:21 INFO     Loading block BlockNellie-AA-119
+2023-04-24 17:03:24 INFO     Loading block BlockNellie-AA-120
+2023-04-24 17:03:25 INFO     Loading block BlockNellie-AA-121
+2023-04-24 17:03:28 INFO     Loading block BlockNellie-AA-122
+2023-04-24 17:03:32 INFO     Loading block BlockNellie-AA-123
+2023-04-24 17:03:35 INFO     Loading block BlockNellie-AA-124
+2023-04-24 17:03:40 INFO     Loading block BlockNellie-AA-125
+2023-04-24 17:03:43 INFO     Loading block BlockNellie-AA-126
+2023-04-24 17:03:47 INFO     Loading block BlockNellie-AA-127
+2023-04-24 17:03:50 INFO     Loading block BlockNellie-AA-128
+2023-04-24 17:03:55 INFO     Loading block BlockNellie-AA-129
+2023-04-24 17:03:58 INFO     Loading block BlockNellie-AA-130
+2023-04-24 17:04:02 INFO     Loading block BlockNellie-AA-131
+2023-04-24 17:04:06 INFO     Loading block BlockNellie-AA-132
+2023-04-24 17:04:10 INFO     Loading block BlockNellie-AA-133
+2023-04-24 17:04:14 INFO     Loading block BlockNellie-AA-134
+2023-04-24 17:04:17 INFO     Loading block BlockNellie-AA-135
+2023-04-24 17:04:21 INFO     Loading block BlockNellie-AA-136
+2023-04-24 17:04:25 INFO     Concatenating recordings
+2023-04-24 17:04:25 INFO     Preprocessing recordings
+2023-04-24 17:05:43 INFO     [WhitenRecording: 16 channels - 1 segments - 24.4kHz - 44728.729s - float32 type - 65.09 GiB, WhitenRecording: 16 channels - 1 segments - 24.4kHz - 44728.729s - float32 type - 65.09 GiB]
+2023-04-24 17:05:43 INFO     Sorting
+/var/opt/sge/node-b00a-013/job_scripts/354453: line 64: 208537 Segmentation fault      (core dumped) python /home/zceccgr/Scratch/zceccgr/spikeinterface3cg/concatenated_warp_jules_cruella21042023.py
+tar: Removing leading `/' from member names
